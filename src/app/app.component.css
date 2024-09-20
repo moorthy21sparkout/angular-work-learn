@@ -1,0 +1,19 @@
+.cdk-drop-list {
+    width: 300px;
+    border: 1px solid #ccc;
+    min-height: 100px;
+    background: #f9f9f9;
+    padding: 10px;
+  }
+  
+  .cdk-drag {
+    padding: 10px;
+    border: 1px solid #007bff;
+    background: #fff;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  .container{
+    display: flex;
+    justify-items: center;
+  }
