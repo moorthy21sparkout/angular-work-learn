@@ -11,9 +11,17 @@ import { SectionComponent } from "../section/section.component";
 })
 export class NavigateComponent {
 
-  constructor(private Router:Router){}
-  navigateToSection(){
+  constructor(private Router: Router) { }
+  navigateToSection() {
     this.Router.navigateByUrl('/navigate').then(() => {
       this.Router.navigate(['/navigate/section'], { fragment: 'target' });
-    });  }
+    });
+  }
+
+  listTask() {
+    this.Router.navigateByUrl('/navigate').then(() => {
+      this.Router.navigate(['/navigate/task'], { fragment: 'task' });
+    });
+  }
+
 }

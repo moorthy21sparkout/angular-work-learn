@@ -1,0 +1,30 @@
+<p id="task">task List!</p>
+<!-- Form to add a new task -->
+<form (ngSubmit)="addTask()" #taskForm="ngForm">
+    <label for="title">Title:</label>
+    <input type="text" id="title" [(ngModel)]="newTaskTitle" name="title" required />
+    
+    <label for="priority">Priority:</label>
+    <select id="priority" [(ngModel)]="newTaskPriority" name="priority" required>
+      <option *ngFor="let priority of priorities" [value]="priority">{{ priority }}</option>
+    </select>
+    
+    <label for="status">Status:</label>
+    <select id="status" [(ngModel)]="newTaskStatus" name="status" required>
+      <option *ngFor="let status of statuses" [value]="status">{{ status }}</option>
+    </select>
+  
+    <button type="submit">Add Task</button>
+  </form>
+<ul>
+<li *ngFor="let tasks of task">
+    <strong>Title:</strong> {{ tasks.title }} <br>
+    <strong>Priority:</strong> {{ tasks.priority }} <br>
+    <strong>Status:</strong> {{ tasks.status }}
+
+    <label>Change Status:</label>
+    <select  (change)="changeStatus(tasks, $event)">
+      <option *ngFor="let status of statuses">{{ status }}</option>
+    </select>
+</li>
+</ul>

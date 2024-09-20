@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { SectionComponent } from './section/section.component';
 import { NavigateComponent } from './navigate/navigate.component';
+import { TaskComponent } from './task/task.component';
 
 export const routes: Routes = [
     {
@@ -10,6 +11,10 @@ export const routes: Routes = [
           {
             path: 'section',
             component: SectionComponent
+          },
+          {
+            path:'task',
+            component:TaskComponent
           }
         ]
       },
