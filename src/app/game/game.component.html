@@ -1,0 +1,18 @@
+<h1 style="display: flex; justify-content: center;">Buzzle Game</h1>
+<div class="game-container">
+<h2>Unscramble the word: {{ scrambleWords }}</h2>
+<input type="text" [(ngModel)]="userInput" placeholder="Your guess" />
+<button (click)="checkGuess()">Check</button>
+<p  class="success-message">{{successMessage}}</p>
+<p style="color: red;">{{errorMessage}}</p>
+<p>Coins: {{ coins }}</p> <!-- Display the number of coins -->
+<button (click)="newGame()">New Game</button>
+</div>
+<div class="game-container-number">
+    <h1>Number Guessing Game</h1>
+    <p class="success-message">{{successMessageNumber}}</p>
+    <p style="color: rgb(148, 125, 125);">{{message}}</p>
+    <input type="number" [(ngModel)]="userGuess" placeholder="Enter your guess" />
+    <button (click)="checkGuessNumber()">Check Guess</button><br>
+    <button (click)="numberGame()">New Game</button>
+  </div>

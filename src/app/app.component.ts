@@ -7,11 +7,12 @@ import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { CommonModule } from '@angular/common';
 import { ProjectUpdateComponent } from "./project/project-update/project-update.component";
 import { ProjectDeleteComponent } from "./project/project-delete/project-delete.component";
+import { GameComponent } from "./game/game.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavigateComponent, TaskComponent, DragDropModule, CommonModule, ProjectUpdateComponent, ProjectDeleteComponent],
+  imports: [RouterOutlet, NavigateComponent, TaskComponent, DragDropModule, CommonModule, ProjectUpdateComponent, ProjectDeleteComponent, GameComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

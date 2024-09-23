@@ -1,0 +1,79 @@
+/* General styles for the game containers */
+.game-container,
+.game-container-number {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #007bff; /* Blue border */
+  border-radius: 8px;
+  background-color: #f8f9fa; /* Light background */
+  width: 300px; /* Fixed width for both games */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Styles for headings */
+h1 {
+  font-size: 24px;
+  color: #343a40; /* Darker text color */
+}
+
+h2 {
+  font-size: 20px;
+  color: #495057; /* Medium dark color */
+}
+
+/* Input styles */
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ced4da; /* Light border */
+  border-radius: 4px;
+  margin-top: 10px;
+  width: 80%; /* Make the input field responsive */
+}
+
+/* Button styles */
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Message styles */
+p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Styles for success and error messages */
+
+
+.error-message {
+  color: red;
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .success-message {
+    color: green;
+    animation: fadeIn 0.5s ease-in-out; /* Apply the fade-in animation */
+  }
