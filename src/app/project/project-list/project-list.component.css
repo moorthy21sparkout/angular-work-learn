@@ -1,0 +1,116 @@
+form {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 50%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    background-color: #f9f9f9;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e03939;
+    color: #ffffff;
+  }
+  
+  .success-message {
+    color: rgb(14, 172, 0);
+    margin-top: 10px;
+  }
+  
+  .error-message {
+    color: rgb(216, 25, 25);
+    margin-top: 10px;
+  }
+  
+  h2 {
+    margin-top: 30px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 50px;
+    margin-bottom: 10px;
+  }
+  
+  li span {
+    cursor: pointer;
+    color: #007bff;
+  }
+  
+  li span:hover {
+    text-decoration: underline;
+  }
+  .add {
+    margin: auto;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a65c7;
+    color: rgb(235, 223, 223);
+    cursor: pointer;
+    display: block; /* Ensures the button centers properly */
+    text-align: center;
+  }
+  /* Styles for the success and error messages */
+.success-message, .error-message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 400px; /* Adjust width as needed */
+    display: block;
+  }
+  
+  /* Specific styles for success and error messages */
+  .success-message {
+    color: #0eac00;
+    background-color: #e6ffe6; /* Light green background for success */
+  }
+  
+  .error-message {
+    color: #d81919;
+    background-color: #ffe6e6; /* Light red background for errors */
+  }
+  
+  /* Optional: Ensure messages are displayed near the form */
+  .message-container {
+    margin-top: 10px; /* Adjust margin to control spacing */
+    text-align: center; /* Adjust alignment as needed */
+  }
+  

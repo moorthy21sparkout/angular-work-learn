@@ -1,0 +1,26 @@
+<form>
+    <label for="name">Project Name:</label>
+    <input type="text" name="name" [(ngModel)]="projectName" placeholder="Enter the project name"><br><br>
+  
+    <label for="description">Project Description:</label>
+    <input type="text" name="description" [(ngModel)]="projectDescription" placeholder="Enter the description"><br><br>
+  </form>
+  
+  <button class="add" (click)="addProject($event)">Add</button>
+  
+  <!-- Message Container -->
+  <div class="message-container">
+    <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+    <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+  </div>
+  
+  <h2>Project List</h2>
+  <ul>
+    <li *ngFor="let project of projects">
+      <span style="cursor: pointer;" (click)="viewProject(project.id)">{{ project.name }}</span>
+      <button (click)="toggleUpdateForm(project)">Update</button>
+      <app-project-update *ngIf="projectToUpdate === project" [project]="project" (onUpdate)="handleUpdate($event)" (onCancel)="handleCancel()"></app-project-update>
+      <button (click)="deleteProject(project.id)">Delete</button>
+    </li>
+  </ul>
+  

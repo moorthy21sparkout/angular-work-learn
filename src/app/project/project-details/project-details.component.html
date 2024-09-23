@@ -1,0 +1,14 @@
+<h2>Project Detail</h2>
+<div class="project-detail" *ngIf="project">
+  <ul>
+    <li>
+      <h3>Project Name: <b>{{ project.name }}</b></h3>
+      <p>Project Description: <b>{{ project.description }}</b></p>
+      <p>Project Status: <b>{{ project.status }}</b></p>
+      <p>Response: <b>{{ project.response }}</b></p>
+    </li>
+  </ul>
+  <button (click)="goBack()">Back to Project List</button>
+</div>
+<!-- Conditionally display the form -->
+
